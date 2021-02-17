@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+.navigation .list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navigation .list__link {
+  display: inline-block;
+  padding: 1rem 1.4rem;
+  color: #fff;
+}
+.navigation .list__link:hover {
+  color: #fbcf8b;
+}
+
+.list__item + .list__item {
+  margin-left: 0.8rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  color: #fbcf8b;
+  border: 2px solid #fbcf8b;
+}
+.button:hover {
+  background-color: #333b419c;
+  transition: background-color 0.6s linear;
+}
+
+.h4-style {
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 100;
+  word-spacing: 2.5px;
+  padding: 0 1.8rem 1.6rem;
+  border-bottom: 2px solid #6b7074;
+}
+
+.h2-style {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.6rem 0 2rem;
+}
+
+.h3-style {
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h5-style {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #fbcf8b;
+}
+
+.paragraph {
+  text-align: center;
+  padding: 0.8rem 1rem;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.l-header {
+  width: 100%;
+  height: 70px;
+  padding: 0 2rem;
+  border-bottom: 2px solid #6b7074;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+.l-header__wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header__wrapper .list__item {
+  position: relative;
+}
+.l-header__wrapper .list__item:hover::after {
+  content: '';
+  height: 5px;
+  width: 100%;
+  background-color: #fbcf8b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+}
+
+.l-banner {
+  width: 100%;
+  height: 700px;
+  background-color: #333b41;
+  position: relative;
+}
+.l-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+.l-banner__info {
+  width: 100%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 35%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.l-services {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 2rem;
+}
+.l-services__wrapper {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+.services .card {
+  width: 27%;
+  min-width: 220px;
+  margin-top: 1.4rem;
+}
+
+.l-footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: #494f51;
+}
+.l-footer__wrapper {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.footer-1 {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #6b7074;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer-1 .card {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 38%;
+  min-width: 260px;
+  margin-top: 1.4rem;
+}
+.footer-1 .card .h4-style {
+  text-align: left;
+  padding: 0 0 1.6rem;
+}
+.footer-1 .card .contact {
+  padding: 0.8rem 0;
+}
+.footer-1 .card .icon {
+  font-size: 1.6rem;
+  margin-right: 0.6rem;
+}
+.footer-1 .card .paragraph {
+  text-align: left;
+  color: #fff;
+  padding: 0.8rem 0;
+}
+
+.footer-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-2 .navigation {
+  width: 40%;
+  min-width: 280px;
+}
+.footer-2 p {
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
+.footer-2 p a {
+  color: #fff;
+}
+.footer-2 p a:hover {
+  color: #fbcf8b;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

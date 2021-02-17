@@ -1,0 +1,21 @@
+.navigation {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__link {
+            display: inline-block;
+            padding: 1rem 1.4rem;
+            color: #fff;
+
+            &:hover {
+                color: #fbcf8b;
+            }
+        }
+    }
+}
+
+.list__item + .list__item {
+    margin-left: 0.8rem;
+}

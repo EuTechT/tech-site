@@ -1,0 +1,11 @@
+.button {
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    color: #fbcf8b;
+    border: 2px solid #fbcf8b;
+
+    &:hover {
+        background-color: #333b419c;
+        transition: background-color 0.6s linear;
+    }
+}

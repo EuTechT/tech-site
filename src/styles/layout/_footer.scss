@@ -1,0 +1,75 @@
+.l-footer {
+    width: 100%;
+    padding: 2rem;
+    background-color: #494f51;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 920px;
+        margin: 0 auto;
+    }
+}
+
+.footer-1 {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #6b7074;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 38%;
+        min-width: 260px;
+        margin-top: 1.4rem;
+
+        .h4-style {
+            text-align: left;
+            padding: 0 0 1.6rem;
+        }
+
+        .contact {
+            padding: 0.8rem 0;
+        }
+
+        .icon {
+            font-size: 1.6rem;
+            margin-right: 0.6rem;
+        }
+
+        .paragraph {
+            text-align: left;
+            color: #fff;
+            padding: 0.8rem 0;
+        }
+    }
+}
+
+.footer-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .navigation {
+        width: 40%;
+        min-width: 280px;
+    }
+
+    p {
+        padding: 0.6rem 0;
+        font-size: 1rem;
+        color: #fff;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #fbcf8b;
+                text-decoration: underline;
+            }
+        }
+    }
+}
