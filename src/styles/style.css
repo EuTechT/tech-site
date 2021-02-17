@@ -66,6 +66,16 @@ li {
   transition: background-color 0.6s linear;
 }
 
+.btn-menu {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-menu .icon {
+  color: #fff;
+}
+
 .h4-style {
   color: #fff;
   text-align: center;
@@ -120,11 +130,12 @@ li {
   height: 70px;
   padding: 0 2rem;
   border-bottom: 2px solid #6b7074;
-  position: absolute;
+  transition: background-color 0.25s linear;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 .l-header__wrapper {
   width: 100%;
@@ -135,20 +146,66 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.l-header__wrapper .list__item {
+.l-header .navigation {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  right: 0;
+  background-color: #494f51;
+  z-index: 1000;
+}
+.l-header .navigation .list {
+  display: block;
+}
+.l-header .navigation .list__item {
+  width: 100%;
+  margin: 0;
   position: relative;
 }
-.l-header__wrapper .list__item:hover::after {
+.l-header .navigation .list__item:hover::after {
   content: '';
-  height: 5px;
-  width: 100%;
+  height: 100%;
+  width: 5px;
   background-color: #fbcf8b;
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: -7px;
+}
+.l-header .navigation .list__link {
+  width: 100%;
 }
 
+@media all and (min-width: 1025px) {
+  .l-header__wrapper .btn-menu {
+    display: none;
+  }
+  .l-header__wrapper .navigation {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: none;
+  }
+  .l-header__wrapper .navigation .list {
+    display: flex;
+  }
+  .l-header__wrapper .navigation .list__item {
+    width: unset;
+  }
+  .l-header__wrapper .navigation .list__item:hover::after {
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: #fbcf8b;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+  }
+  .l-header__wrapper .navigation .list__link {
+    width: unset;
+  }
+}
 .l-banner {
   width: 100%;
   height: 700px;
@@ -258,6 +315,14 @@ li {
 .footer-2 p a:hover {
   color: #fbcf8b;
   text-decoration: underline;
+}
+
+.is-open {
+  display: block !important;
+}
+
+.is-scroll {
+  background-color: #494f51 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

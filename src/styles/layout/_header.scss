@@ -4,12 +4,14 @@
     padding: 0 2rem;
     border-bottom: 2px solid #6b7074;
 
-    position: absolute;
+    transition: background-color 0.25s linear;
+
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
 
-    z-index: 100;
+    z-index: 1000;
 
     &__wrapper {
         width: 100%;
@@ -20,20 +22,80 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
 
-        .list__item {
-            position: relative;
+    .navigation {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        right: 0;
+        background-color: #494f51;
+        z-index: 1000;
+
+        .list {
+            display: block;
+
+            &__item {
+                width: 100%;
+                margin: 0;
+                position: relative;
+
+                &:hover::after {
+                    content: '';
+                    height: 100%;
+                    width: 5px;
+                    background-color: #fbcf8b;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+
+            &__link {
+                width: 100%;
+            }
         }
+    }
+}
 
-        .list__item:hover::after {
-            content: '';
-            height: 5px;
-            width: 100%;
-            background-color: #fbcf8b;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -7px;
+@media all and (min-width: 1025px) {
+    .l-header {
+        &__wrapper {
+            .btn-menu {
+                display: none;
+            }
+
+            .navigation {
+                display: block;
+                position: relative;
+                left: 0;
+                top: 0;
+                right: 0;
+                background: none;
+    
+                .list {
+                    display: flex;
+    
+                    
+                    &__item {
+                        width: unset;
+
+                        &:hover::after {
+                            content: '';
+                            height: 5px;
+                            width: 100%;
+                            background-color: #fbcf8b;
+                            left: 0;
+                            right: 0;
+                            bottom: -7px;
+                        }
+                    }
+
+                    &__link {
+                        width: unset;
+                    }
+                }
+            }
         }
     }
 }
