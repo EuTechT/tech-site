@@ -152,11 +152,13 @@ li {
   align-items: center;
 }
 .l-header .navigation {
-  display: none;
   position: absolute;
   left: 0;
   top: 70px;
   right: 0;
+  height: 0;
+  overflow-y: hidden;
+  transition: height 0.2s linear;
   background-color: #5c6166;
   border-bottom: 2px solid #6b7074;
   z-index: 1000;
@@ -191,6 +193,8 @@ li {
     left: 0;
     top: 0;
     right: 0;
+    overflow-y: unset;
+    height: unset;
     background: none;
     border: none;
   }
@@ -330,7 +334,7 @@ li {
 }
 
 .is-open {
-  display: block !important;
+  height: 162px !important;
 }
 
 .is-scroll {

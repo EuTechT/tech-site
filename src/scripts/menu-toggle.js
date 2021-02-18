@@ -14,3 +14,14 @@ function changeIcon(icon) {
         return 'menu';
     }
 }
+
+window.onresize = function() {
+    closeMenuNavigation();
+}
+
+function closeMenuNavigation() {
+    if(window.innerWidth > 1024) {
+        btnMenuIcon.innerText = 'menu';
+        menuNavigation.classList.remove('is-open');
+    }
+}

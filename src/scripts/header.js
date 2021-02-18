@@ -5,7 +5,7 @@ window.onscroll = function() {
 }
 
 function scrollTop() {
-    if(this.scrollY > 50) {
+    if(window.scrollY > 50) {
         header.classList.add('is-scroll');
     } else {
         header.classList.remove('is-scroll');
