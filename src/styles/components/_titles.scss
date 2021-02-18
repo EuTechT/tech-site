@@ -10,11 +10,17 @@
 
 .h2-style {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     text-transform: uppercase;
     text-align: center;
     padding: 1.6rem 0 2rem;
+}
+
+@media all and (min-width: 321px){
+    .h2-style {
+        font-size: 4rem;
+    }
 }
 
 .h3-style {

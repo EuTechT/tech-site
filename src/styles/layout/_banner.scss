@@ -16,11 +16,19 @@
         width: 100%;
         padding: 0 2rem;
         position: absolute;
-        top: 35%;
+        top: 28%;
 
         z-index: 100;
 
         display: flex;
         justify-content: center;
+    }
+}
+
+@media all and (min-width: 571px) {
+    .l-banner {
+        &__info {
+            top: 35%;
+        }
     }
 }

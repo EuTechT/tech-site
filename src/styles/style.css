@@ -88,13 +88,18 @@ li {
 
 .h2-style {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
   padding: 1.6rem 0 2rem;
 }
 
+@media all and (min-width: 321px) {
+  .h2-style {
+    font-size: 4rem;
+  }
+}
 .h3-style {
   font-size: 2rem;
   font-weight: 100;
@@ -153,7 +158,6 @@ li {
   top: 70px;
   right: 0;
   background-color: #5c6166;
-  transition: background-color 0.2s linear;
   border-bottom: 2px solid #6b7074;
   z-index: 1000;
 }
@@ -225,12 +229,17 @@ li {
   width: 100%;
   padding: 0 2rem;
   position: absolute;
-  top: 35%;
+  top: 28%;
   z-index: 100;
   display: flex;
   justify-content: center;
 }
 
+@media all and (min-width: 571px) {
+  .l-banner__info {
+    top: 35%;
+  }
+}
 .l-services {
   width: 100%;
   height: 100%;
