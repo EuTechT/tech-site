@@ -130,7 +130,7 @@ li {
   height: 70px;
   padding: 0 2rem;
   border-bottom: 2px solid #6b7074;
-  transition: background-color 0.25s linear;
+  transition: background-color 0.2s linear;
   position: fixed;
   left: 0;
   top: 0;
@@ -152,7 +152,9 @@ li {
   left: 0;
   top: 70px;
   right: 0;
-  background-color: #494f51;
+  background-color: #5c6166;
+  transition: background-color 0.2s linear;
+  border-bottom: 2px solid #6b7074;
   z-index: 1000;
 }
 .l-header .navigation .list {
@@ -186,6 +188,7 @@ li {
     top: 0;
     right: 0;
     background: none;
+    border: none;
   }
   .l-header__wrapper .navigation .list {
     display: flex;

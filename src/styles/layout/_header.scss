@@ -4,7 +4,7 @@
     padding: 0 2rem;
     border-bottom: 2px solid #6b7074;
 
-    transition: background-color 0.25s linear;
+    transition: background-color 0.2s linear;
 
     position: fixed;
     left: 0;
@@ -30,7 +30,10 @@
         left: 0;
         top: 70px;
         right: 0;
-        background-color: #494f51;
+        background-color: #5c6166;
+        //background-color: #494f51;
+        transition: background-color 0.2s linear;
+        border-bottom: 2px solid #6b7074;
         z-index: 1000;
 
         .list {
@@ -72,6 +75,7 @@
                 top: 0;
                 right: 0;
                 background: none;
+                border: none;
     
                 .list {
                     display: flex;
