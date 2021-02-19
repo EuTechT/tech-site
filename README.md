@@ -1,3 +1,11 @@
+# Tech
+
 ![alt text](screenshot.png)
 
-<h1 style="text-align: center;">Tech</h1>
+# Descrição
+
+## É uma simples página para treinar e melhorar as minhas habilidades com HTML, CSS e JS.
+
+# Status do Projeto
+
+## 🚧 Em construção... 🚧
