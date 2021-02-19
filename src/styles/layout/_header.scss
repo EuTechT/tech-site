@@ -1,6 +1,6 @@
 .l-header {
     width: 100%;
-    height: 70px;
+    height: 60px;
     padding: 0 2rem;
     border-bottom: 2px solid #6b7074;
 
@@ -27,12 +27,12 @@
     .navigation {
         position: absolute;
         left: 0;
-        top: 70px;
+        top: 60px;
         right: 0;
         height: 0;
         overflow-y: hidden;
         transition: height 0.2s linear;
-        background-color: #5c6166;
+        background-color: #494f51;
         //background-color: #494f51;
         border-bottom: 2px solid #6b7074;
         z-index: 1000;
@@ -94,7 +94,7 @@
                             background-color: #fbcf8b;
                             left: 0;
                             right: 0;
-                            bottom: -7px;
+                            bottom: -4px;
                         }
                     }
 
